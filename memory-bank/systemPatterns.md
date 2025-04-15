@@ -21,10 +21,13 @@ Git Canvas is structured as a Chrome Extension using Manifest V3. The extension 
 - canvas.html loads the visual planning canvas (src/canvas.tsx, src/CanvasPage.tsx)
 - background.js handles authentication, storage, and messaging between UI and background
 - All UI components interact with chrome.storage and background scripts as needed
+- Options page now includes fields for GitHub username, API key, and canvas settings
+- Canvas page includes a project name input field and Save/Cancel buttons
 
 ## Critical Implementation Paths
 - User authenticates with GitHub via popup; background.js manages OAuth flow
 - User creates/edits visual plans on the canvas; data is saved to chrome.storage
 - AI features are accessed via API key set in options; invoked from the UI
+- Popup allows users to start a new plan (navigating to canvas) or load existing plans from chrome.storage
 
 *Update this file as the architecture and patterns evolve.*

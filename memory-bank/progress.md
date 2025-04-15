@@ -5,18 +5,20 @@
 - Chrome Extension manifest and structure are set up
 - React, TypeScript, Vite, and React Flow are integrated
 - Popup, options, and canvas entry points are established
+- Popup functionality for starting a new plan and loading existing plans
+- Options page with fields for GitHub username, API key, and canvas settings
+- Canvas page with project name input and Save/Cancel buttons
 
 ## What's Left to Build
-- Complete implementation of the visual planning canvas
+- Complete implementation of the visual planning canvas, including tools for drawing objects
 - Integrate GitHub OAuth and API features
 - Implement persistent storage for user data and plans
 - Add and refine AI-powered planning/documentation features
-- Polish UI/UX for all extension pages
 - Comprehensive testing and bug fixing
 - Prepare for Chrome Web Store submission
 
 ## Current Status
-The project is in the early-to-mid development phase. Core architecture and setup are complete, and the focus is shifting to feature completion, integration, and polish.
+The project is progressing steadily. Core architecture and setup are complete, and several key features have been implemented. The focus is now on enhancing functionality and user experience.
 
 ## Known Issues
 - AI features and GitHub integration may require additional API handling and security review

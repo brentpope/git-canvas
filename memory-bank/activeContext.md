@@ -7,11 +7,14 @@ Initial documentation and memory bank setup. Reviewing and documenting the archi
 - Populated all memory bank files with accurate project documentation
 - Reviewed project structure, manifest, and dependencies
 - Summarized system architecture and design patterns
+- Added functionality to the popup for starting a new plan and loading existing plans
+- Enhanced the options page with fields for GitHub username, API key, and canvas settings
+- Updated the canvas page to include a project name input field and Save/Cancel buttons
 
 ## Next Steps
-- Implement and refine core features (visual canvas, GitHub integration, AI assistance)
-- Polish UI/UX for popup, options, and canvas pages
-- Test extension in Chrome and address any issues
+- Implement GitHub repository selection and tools for drawing objects on the canvas
+- Refine the Save functionality to persist project data
+- Test and debug the extension for seamless user experience
 - Prepare for Chrome Web Store submission
 
 ## Active Decisions & Considerations
