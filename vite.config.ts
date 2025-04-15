@@ -8,11 +8,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        // Adjust these paths if your HTML files are located elsewhere (e.g., inside src/)
         popup: path.resolve(__dirname, 'popup.html'),
         options: path.resolve(__dirname, 'options.html'),
-        // If you have a main canvas page as a separate HTML file, add it here:
-        // main: path.resolve(__dirname, 'canvas.html'),
+        canvas: path.resolve(__dirname, 'src/canvas.tsx'), // Changed to point to TSX source
       },
       output: {
         // Configure output filenames (optional but recommended)
@@ -20,8 +18,8 @@ export default defineConfig({
         chunkFileNames: `assets/[name].js`,
         assetFileNames: `assets/[name].[ext]`
       }
-    },
-    outDir: 'dist' // Specify the output directory
-  },
-  base: './' // Use relative paths for assets in the build output
-})
+     },
+     outDir: 'dist' // Specify the output directory
+   }
+   // base: './' // Removed - Let browser handle extension paths
+ })

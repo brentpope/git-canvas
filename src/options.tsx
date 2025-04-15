@@ -1,6 +1,37 @@
+import React from "react";
 import { createRoot } from "react-dom/client";
 
-const Options = () => (
+const Options = () => {
+  React.useEffect(() => {
+    chrome.storage.sync.get(
+      [
+        'githubUsername',
+        'githubToken', 
+        'canvasTheme',
+        'canvasGridlines',
+        'defaultNodeStyle'
+      ],
+      (items) => {
+        if (items.githubUsername) {
+          (document.getElementById('github-username') as HTMLInputElement).value = items.githubUsername;
+        }
+        if (items.githubToken) {
+          (document.getElementById('github-token') as HTMLInputElement).value = items.githubToken;
+        }
+        if (items.canvasTheme) {
+          (document.getElementById('theme') as HTMLSelectElement).value = items.canvasTheme;
+        }
+        if (items.canvasGridlines) {
+          (document.getElementById('gridlines') as HTMLSelectElement).value = items.canvasGridlines;
+        }
+        if (items.defaultNodeStyle) {
+          (document.getElementById('node-style') as HTMLInputElement).value = items.defaultNodeStyle;
+        }
+      }
+    );
+  }, []);
+
+  return (
   <div style={{ minWidth: 320, minHeight: 180, padding: 16 }}>
     <h2>Git Canvas Options</h2>
     <form
@@ -68,7 +99,8 @@ const Options = () => (
       </button>
     </form>
   </div>
-);
+  );
+};
 
 const root = createRoot(document.getElementById("options-root")!);
 root.render(<Options />);
