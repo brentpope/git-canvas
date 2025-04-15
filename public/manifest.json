@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Git Canvas",
+  "version": "0.1.0",
+  "description": "Visual project planner and architecture documentation tool for GitHub projects.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "identity",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.github.com/"
+  ],
+  "options_page": "options.html",
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  }
+}
