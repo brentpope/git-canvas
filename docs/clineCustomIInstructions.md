@@ -139,4 +139,6 @@ flowchart TD
 
 Note: When triggered by **update memory bank**, I MUST review every memory bank file, even if some don't require updates. Focus particularly on activeContext.md and progress.md as they track current state. **The final step after core file updates is always updating `docs/copilot_cheatsheet.md`.**
 
+Note: Do NOT remove history from memory bank files.  Keep all history in each file in an archive section.  
+
 REMEMBER: After every memory reset, I begin completely fresh. The Memory Bank is my only link to previous work. It must be maintained with precision and clarity, as my effectiveness depends entirely on its accuracy. **The `copilot_cheatsheet.md` must accurately reflect the *current* state documented within the core memory bank files.**

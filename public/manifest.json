@@ -20,7 +20,8 @@
     "scripting"
   ],
   "host_permissions": [
-    "https://api.github.com/"
+    "https://api.github.com/",
+    "https://github.com/"
   ],
   "options_page": "options.html",
   "icons": {
